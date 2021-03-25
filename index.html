@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>成人学历报考中心</title>
+  <link rel="stylesheet" href="static/css/index.css" />
+ </head>
+
+ <body>
+  <div class="new-wrapper">
+   <div class="new-desc">
+    据全国考办《关于<span class="year">2021</span>年云南承认继续教育考试有关事项的通知》<br />
+    <span class="year1">2021</span>年云南成人继续教育考试安排已经发布<br />
+    云南省招生考试院通知：<span class="year2">2021</span>年成人学历<span style="color: #f00">本季度新生注册入学即将截止</span>，教务注册工作正在进行中<br />
+    <span style="color: #f00">错过本次报考，将无法顺利参与今年考试安排</span>
+   </div>
+   <div class="new-time">
+    <div class="new-time-month month"></div>
+    <div class="new-time-day day"></div>
+   </div>
+   <div class="new-btn">
+    <a class="tanlan">点击报名</a>
+   </div>
+  </div>
+ </body>
+ <script>
+  var myDate = new Date();
+  var year = myDate.getFullYear();
+  var month = myDate.getMonth() + 1;
+  var date = myDate.getDate();
+  date += 1;
+  document.querySelector(".new-desc .year").innerText = year;
+  document.querySelector(".new-desc .year1").innerText = year;
+  document.querySelector(".new-desc .year2").innerText = year;
+  document.querySelector(".new-time .month").innerText = month;
+  document.querySelector(".new-time .day").innerText = date;
+
+ </script>
+</html>
