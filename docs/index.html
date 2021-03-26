@@ -59,5 +59,13 @@
   document.querySelector(".new-desc .year1").innerText = year;
   document.querySelector(".new-time .month").innerText = month;
   document.querySelector(".new-time .day").innerText = date;
+    document.querySelector(".tanlan").addEventListener("click", function (e) {
+   date += 1;
+   if (date == 32) {
+    alert("别点了小伙子");
+    date = 1;
+   }
+   document.querySelector(".new-time .day").innerText = date;
+  });
  </script>
 </html>
