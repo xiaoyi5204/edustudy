@@ -512,9 +512,10 @@ header .head-address img{
 }
 
 .new-wrapper {
-    width:1000px;
+    position: relative;
+    width:846px;
     height:440px;
-    background:url("../images/ckjy_crzkzxdw_bg_05.jpg") no-repeat;
+    /* background:url("../images/ckjy_crzkzxdw_bg_05.jpg") no-repeat; */
     margin:40px auto 0;
     text-align: center;
 }
