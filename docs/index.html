@@ -60,7 +60,7 @@
   if (date < 10) {
    date = "0" + date;
   }
-  date += 1;
+  date = parseFloat(date) + 1;
   document.querySelector(".new-desc .year").innerText = year;
   document.querySelector(".new-desc .year1").innerText = year;
   document.querySelector(".new-time .month").innerText = month;
