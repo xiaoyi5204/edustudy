@@ -562,6 +562,11 @@ header .head-address img{
     font-size:24px;
     background:#f36f6f;
     margin:9px auto 0;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    -khtml-user-select:none;
+     user-select:none;
 }
 
 .ploblem-wrapper{
