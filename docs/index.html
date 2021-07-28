@@ -67,13 +67,6 @@
   document.querySelector(".new-time .day").innerText = date;
   document.querySelector(".tanlan").addEventListener("click", function (e) {
    date = parseFloat(date) + 1;
-   if (date < 10) {
-    date = "0" + date;
-   }
-   if (month == 13) {
-    month = "01";
-    year += 1;
-   }
    let dt = new Date()    
 	 dt.setMonth(parseFloat(month))   
 	 dt.setDate(0);  
@@ -84,6 +77,13 @@
     if (month < 10) {
      month = "0" + month;
     }
+   }
+   if (date < 10) {
+    date = "0" + date;
+   }
+   if (month == 13) {
+    month = "01";
+    year += 1;
    }
    document.querySelector(".new-time .day").innerText = date;
    document.querySelector(".new-time .month").innerText = month;
